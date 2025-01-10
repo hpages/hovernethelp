@@ -272,34 +272,41 @@ the root disk is 200 GB:
 
   filename: TCGA-5P-A9JV-01Z-00-DX1.E9472303-DC58-4CE5-8A91-CB9275BE0891.svs
     | size: 3.8G, 286 chunks!
+    | fills the root disk on hovernet1
     | --> will need to process this image on a machine with more disk space
 
   filename: TCGA-23-2641-01Z-00-DX1.DB792236-39EC-4090-9938-B0915C3378A0.svs
     | From TCGA-OV project (ovarian cancer study).
     | 150 chunks!
-    | fills the cache on hovernet2
+    | fills the root disk on hovernet2
+    | --> will need to process this image on a machine with more disk space
+
+  filename: TCGA-3U-A98D-01Z-00-DX1.3CADC856-EEB0-410E-9881-B8188B91110D.svs
+    | 190 chunks!
+    | fills the root disk on hovernet3
     | --> will need to process this image on a machine with more disk space
 
   filename: TCGA-25-1319-01Z-00-DX1.71EFB946-ACAF-4BA6-8855-D336268D87F0.svs
     | From TCGA-OV project (ovarian cancer study).
     | 160 chunks!
-    | fills the cache on hovernet4
+    | fills the root disk on hovernet4
     | --> will need to process this image on a machine with more disk space
 
   filename: TCGA-23-1117-01Z-00-DX1.783914B6-B079-4828-B77B-4C6306FAE4C1.svs
     | From TCGA-OV project (ovarian cancer study).
     | 130 chunks!
-    | fills the cache on hovernet6
+    | fills the root disk on hovernet6
     | --> will need to process this image on a machine with more disk space
 
   filename: TCGA-23-1119-01Z-00-DX1.44D3D70A-A421-4962-8385-2A3CF8E9880A.svs
     | From TCGA-OV project (ovarian cancer study).
     | 130 chunks!
-    | fills the cache on hovernet6
+    | fills the root disk on hovernet6
     | --> will need to process this image on a machine with more disk space
 
   filename: TCGA-23-1027-01Z-00-DX1.53F9DFF4-6811-4184-B2FD-1F6706B948FD.svs
     | From TCGA-OV project (ovarian cancer study).
     | 99 chunks
+    | fills the root disk on hovernet7
     | --> got resolved by doing some cleaning on hovernet7
 
