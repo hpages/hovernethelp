@@ -2,7 +2,7 @@
 ### and 'json/', 'mask/', 'thumb/' subfolders on hoverboss, then run
 ### the code below from within '~/collected_infer_results/TCGA-PRAD/'.
 
-PATH_TO_ALL_INFER_OUTPUT <- "/media/volume/inferdata1"
+PATH_TO_ALL_INFER_OUTPUT <- "/media/volume"
 PROJECT_ID <- "TCGA-PRAD"
 
 library(tools)  # for file_path_as_absolute()
