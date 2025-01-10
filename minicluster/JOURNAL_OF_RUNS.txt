@@ -360,6 +360,15 @@ Worker: kakapo1
 Global image indices: 2701-3000
 Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
 Started on: 2024-12-31 at 18:08 pm PST
+Status: COMPLETED (on 2025-01-10 at 6:47 am PST)
+#successes/#failures: 282/18
+
+-------------------------------------------------------------------------------
+Worker: kakapo1
+Global image indices: all the images that failed so far on the hovernet VMs
+                      (128 images in total)
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-01-10 at 11:59 am PST
 Status: RUNNING
 #successes/#failures: ?/?
 
@@ -367,7 +376,25 @@ Status: RUNNING
 Worker: hovernet3
 Global image indices: 11761-11765 (last 5 images)
 Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
-Started on: 2025-01-10 at 7:25 pm PST
+Started on: 2025-01-10 at 7:25 am PST
+Status: COMPLETED (on 2025-01-10 at 12:12 pm PST)
+#successes/#failures: 5/0
+
+
+===============================================================================
+                      ****** PROSTATE CANCER RUNS ******
+                           Project.ID == "TCGA-PRAD"
+
+-------------------------------------------------------------------------------
+Worker: hovernet3
+Goal: Process 12th to 217th images from Prostate adenocarcinoma study
+Global image indices: 4861-4884, 7129-7191, 7675-7681,
+                      8151-8194, 8328-8330, 8337-8401
+  # List of global indices obtained in R with:
+  #   load('~/imageTCGA/R/sysdata.rda')
+  #   which(db[,"Project.ID"] == "TCGA-PRAD")[12:217]
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-01-10 at 12:30 pm PST
 Status: RUNNING
 #successes/#failures: ?/?
 
