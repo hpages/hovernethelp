@@ -369,8 +369,8 @@ Global image indices: all the images that failed so far on the hovernet VMs
                       (128 images in total)
 Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
 Started on: 2025-01-10 at 11:59 am PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-01-20 at 10:44 am PST)
+#successes/#failures: 124/4
 
 -------------------------------------------------------------------------------
 Worker: hovernet3
@@ -379,6 +379,30 @@ Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
 Started on: 2025-01-10 at 7:25 am PST
 Status: COMPLETED (on 2025-01-10 at 12:12 pm PST)
 #successes/#failures: 5/0
+
+-------------------------------------------------------------------------------
+Worker: kakapo1
+Global image indices: 3001-3500
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-01-21 at 10:25 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet1
+Global image indices: 3501-3750
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-01-24 at 10:25 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet2
+Global image indices: 3751-4000
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-01-24 at 10:44 am PST
+Status: RUNNING
+#successes/#failures: ?/?
 
 
 ===============================================================================
