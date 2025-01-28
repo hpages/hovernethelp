@@ -31,7 +31,7 @@ while true; do
 
 	## Download TCGA image listed in 'manifest-current'
 	cd ~/tcga_images && rm -rf *
-	R_EXPR="source('~/hovernethelp/R-scripts/R-scripts/download_images.R');"
+	R_EXPR="source('~/hovernethelp/R-scripts/download_images.R');"
 	R_EXPR="$R_EXPR download_images('~/manifest-current')"
 	Rscript -e "$R_EXPR"
 
