@@ -31,28 +31,8 @@ while true; do
 
 	## Download TCGA image listed in 'manifest-current'
 	cd ~/tcga_images && rm -rf *
-	R_EXPR="file_names <- readLines('~/manifest-current');"
-	R_EXPR="$R_EXPR load('~/imageTCGA/R/sysdata.rda');"
-	R_EXPR="$R_EXPR idx <- match(file_names, db[ , 'File.Name']);"
-	R_EXPR="$R_EXPR file_ids <- db[idx, 'File.ID'];"
-	R_EXPR="$R_EXPR project_ids <- db[idx , 'Project.ID'];"
-	R_EXPR="$R_EXPR cat('\n', length(file_ids), ' FILES TO DOWNLOAD:\n', sep='');"
-	R_EXPR="$R_EXPR Names <- paste0('Name: ', file_names);"
-	R_EXPR="$R_EXPR IDs <- paste0('ID:   ', file_ids);"
-	R_EXPR="$R_EXPR cat(sprintf('%3d. %s\n     %s', seq_along(Names), Names, IDs), sep='\n');"
-	R_EXPR="$R_EXPR cat('\n');"
-	R_EXPR="$R_EXPR for (i in seq_along(file_ids)) {"
-	R_EXPR="$R_EXPR   cat('Downloading file ', i, '/', length(file_ids), ':\n', sep='');"
-	R_EXPR="$R_EXPR   url <- paste0('$TCGA_DATA_URL', file_ids[i]);"
-	R_EXPR="$R_EXPR   destfile <- file_names[i];"
-	R_EXPR="$R_EXPR   repeat {"
-	R_EXPR="$R_EXPR     res <- try(download.file(url, destfile));"
-	R_EXPR="$R_EXPR     if (!inherits(res, 'try-error')) break;"
-	R_EXPR="$R_EXPR     cat('download failed --> trying again\n\n');"
-	R_EXPR="$R_EXPR   }"
-	R_EXPR="$R_EXPR   cat('  --> saved as ', destfile, '\n\n', sep='')"
-	R_EXPR="$R_EXPR };"
-	R_EXPR="$R_EXPR cat('DONE DOWNLOADING FILES\n')"
+	R_EXPR="source('~/hovernethelp/R-scripts/R-scripts/download_images.R');"
+	R_EXPR="$R_EXPR download_images('~/manifest-current')"
 	Rscript -e "$R_EXPR"
 
 	## Run run_infer.py
