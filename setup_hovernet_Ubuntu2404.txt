@@ -216,7 +216,7 @@ Run run_infer.py
       --model_mode=fast \
       --model_path=$HOME/pretrained/hovernet_fast_pannuke_type_tf2pytorch.tar \
       --nr_inference_workers=1 \
-      --nr_post_proc_workers=4 \
+      --nr_post_proc_workers=3 \
       wsi \
       --input_dir=$HOME/tcga_images/ \
       --output_dir=$HOME/infer_output/ \
@@ -229,21 +229,21 @@ Notes
   performance on the JS2 g3.large instances and on kakapo1 (see TIMINGS
   below). Increasing this only seems to slow down things.
 
-- We use 'nr_post_proc_workers=4' on the JS2 g3.large instances. This means
-  that each post proc worker will be able to use up to 15 GB of RAM on these
-  instances (which have 60 GB of RAM). Using a 'nr_post_proc_workers' value > 4
-  puts the run_infer.py at risk of exhausing the 60 GB of RAM (e.g. on image
-  TCGA-23-1114-01Z-00-DX1.26CCA42E-4947-4318-A983-D3B31603482E.svs)
+- We use 'nr_post_proc_workers=3' on the JS2 g3.large instances. This means
+  that each post proc worker will be able to use up to 20 GB of RAM on these
+  instances (which have 60 GB of RAM). Using a 'nr_post_proc_workers' value > 3
+  introduces the risk that run_infer.py will exhaust the 60 GB of RAM (e.g.
+  on image TCGA-23-1114-01Z-00-DX1.26CCA42E-4947-4318-A983-D3B31603482E.svs)
 
-- On kakapo1 (128 GB of RAM), it's safe to use 'nr_post_proc_workers=6'. Note
-  that using 'nr_post_proc_workers=8' would still work on most TCGA images.
-  However we use kakapo1 to process the "difficult images", that is, the
-  images that the JS2 g3.large instances were not able to process. These
-  images tend to consume more memory than the average TCGA image so we want
-  to make sure that all the proc workers will have access to enough RAM.
-  By using 'nr_post_proc_workers=6' instead of 'nr_post_proc_workers=8', each
-  post proc worker will be able to use up to 21 GB of RAM (in average) instead
-  of 16 GB.
+- On kakapo1 (128 GB of RAM), it's safe to use 'nr_post_proc_workers=4'. Note
+  that using a 'nr_post_proc_workers' value of 5 or 6 would still work on most
+  TCGA images. However, we use kakapo1 to process the "difficult images", that
+  is, the images that the JS2 g3.large instances were not able to process.
+  These images tend to consume more memory than the average TCGA image so we
+  want to make sure that all the proc workers will have access to enough RAM.
+  By using 'nr_post_proc_workers=4' instead of 'nr_post_proc_workers=5', each
+  post proc worker will be able to use up to 32 GB of RAM (in average) instead
+  of 25 GB.
 
 TIMINGS
 -------

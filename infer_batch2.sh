@@ -50,7 +50,7 @@ while true; do
 		--model_mode=fast \
 		--model_path=$HOME/pretrained/hovernet_fast_pannuke_type_tf2pytorch.tar \
 		--nr_inference_workers=1 \
-		--nr_post_proc_workers=4 \
+		--nr_post_proc_workers=3 \
 		wsi \
 		--input_dir=$HOME/tcga_images/ \
 		--output_dir=$HOME/infer_output/ \
