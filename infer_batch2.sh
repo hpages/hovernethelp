@@ -63,7 +63,6 @@ while true; do
 		echo ""
 		echo "SUCCESS RUNNING run_infer.py SCRIPT [`date`]"
 		echo ""
-		cat manifest-current >>manifest-success
 
 		## Push results to hoverboss
 		echo "---------- START PUSHING RESULTS TO hoverboss ----------"
@@ -80,6 +79,8 @@ while true; do
 		done
 		echo ""
 		echo "---------- DONE PUSHING RESULTS TO hoverboss  ----------"
+
+		cat manifest-current >>manifest-success
 	else
 		## Failure
 		echo ""
