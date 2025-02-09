@@ -428,6 +428,15 @@ Started on: 2025-01-26 at 12:02 am PST
 Status: RUNNING
 #successes/#failures: ?/?
 
+-------------------------------------------------------------------------------
+Worker: hovernet3
+Global image indices: 4751-5000 (except 4861-4884 from TCGA-PRAD project,
+                                 so 'idx <- c(4751:4860, 4885:5000)')
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-02-07 at 7:49 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
 
 ===============================================================================
                       ****** PROSTATE CANCER RUNS ******
@@ -443,6 +452,21 @@ Global image indices: 4861-4884, 7129-7191, 7675-7681,
   #   which(db[,"Project.ID"] == "TCGA-PRAD")[12:217]
 Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
 Started on: 2025-01-10 at 12:30 pm PST
+Status: COMPLETED (on 2025-02-06 at 4:23 am PST)
+#successes/#failures: 204/2
+
+-------------------------------------------------------------------------------
+Worker: hovernet7
+Goal: Process 218th to 449th images from Prostate adenocarcinoma study
+Global image indices: 8434-8437, 8976-8998, 9077-9121, 9382-9389, 9405-9406,
+                      10160-10164, 10500, 10536, 10567-10568, 10739-10769,
+                      10919-10931, 11245-11252, 11269-11281, 11368,
+                      11452-11468, 11488-11490, 11534-11544, 11570-11613
+  # List of global indices obtained in R with:
+  #   load('~/imageTCGA/R/sysdata.rda')
+  #   which(db[,"Project.ID"] == "TCGA-PRAD")[218:449]
+Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Started on: 2025-02-03 at 8:41 pm PST
 Status: RUNNING
 #successes/#failures: ?/?
 

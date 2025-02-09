@@ -68,10 +68,16 @@ while true; do
 		## Push results to hoverboss
 		echo "---------- START PUSHING RESULTS TO hoverboss ----------"
 		echo ""
-		rsync -azv ~/infer_output $RSYNC_DEST_DIR
-		if [ $? -ne 0 ]; then
-			exit 1
-		fi
+		for i in $(seq 1 10); do
+			rsync -azv ~/infer_output $RSYNC_DEST_DIR
+			if [ $? -eq 0 ]; then
+				break
+			fi
+			if [ $i -eq 10 ]; then
+				exit 1
+			fi
+			sleep 300  # waiting 5 min before next try
+		done
 		echo ""
 		echo "---------- DONE PUSHING RESULTS TO hoverboss  ----------"
 	else
