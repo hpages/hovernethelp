@@ -11,6 +11,8 @@
 # - The 'manifest' file is expected to be found in the home directory.
 # - This script will treat the 'manifest' file read-only.
 
+set +e  # do NOT exit if a simple command exits with a non-zero status
+
 TCGA_DATA_URL="https://api.gdc.cancer.gov/data/"
 RSYNC_DEST_DIR="hovernet@hoverboss:/media/volume/inferdata3/$HOSTNAME"
 
