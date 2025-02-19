@@ -7,7 +7,7 @@
 Worker: hovernet1
 Global image indices: 1-10
 
-Command: time hovernethelp/infer_batch.sh '1:10' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '1:10') >>infer_batch.log 2>&1 &
 
 Size of batch: 10 images, total size ??? (smallest 194M, biggest 853M)
 Status: COMPLETED
@@ -16,7 +16,7 @@ Status: COMPLETED
 Worker: hovernet2
 Global image indices: 11-20
 
-Command: time hovernethelp/infer_batch.sh '11:20' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '11:20') >>infer_batch.log 2>&1 &
 
 Size of batch: 10 images, total size ??? (smallest 357M, biggest 2.0G)
 Status: COMPLETED
@@ -25,7 +25,7 @@ Status: COMPLETED
 Worker: hovernet3
 Global image indices: 21-30
 
-Command: time hovernethelp/infer_batch.sh '21:30' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '21:30') >>infer_batch.log 2>&1 &
 
 Size of batch: 10 images, total size ??? (smallest 190M, biggest 2.2G)
 Status: COMPLETED
@@ -34,7 +34,7 @@ Status: COMPLETED
 Worker: hovernet4
 Global image indices: 31-40
 
-Command: time hovernethelp/infer_batch.sh '31:40' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '31:40') >>infer_batch.log 2>&1 &
 
 Size of batch: 10 images, total size ??? (smallest 645M, biggest 3.4G)
 Status: COMPLETED
@@ -43,7 +43,7 @@ Status: COMPLETED
 Worker: kakapo1
 Global image indices: 41-50
 
-Command: time hovernethelp/infer_batch.sh '41:50' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '41:50') >>infer_batch.log 2>&1 &
 
 Size of batch: 10 images, total size ??? (smallest ???, biggest ???)
 Status: COMPLETED
@@ -58,7 +58,7 @@ Status: COMPLETED
 Worker: hovernet1
 Global image indices: 51-100
 
-Command: time hovernethelp/infer_batch.sh '51:100' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '51:100') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-12 at 7:09 am PST
 Size of batch: 50 images, total size 56G (smallest 174M, biggest 2.8G)
@@ -68,7 +68,7 @@ Status: COMPLETED
 Worker: hovernet2
 Global image indices: 101-150
 
-Command: time hovernethelp/infer_batch.sh '101:150' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '101:150') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-12 at 7:05 am PST
 Size of batch: 21 images, total size ??? (smallest 71M, biggest 695M)
@@ -81,7 +81,7 @@ Status: COMPLETED
 Worker: hovernet3
 Global image indices: 151-200
 
-Command: time hovernethelp/infer_batch.sh '151:200' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '151:200') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-12 at 6:45 am PST
 Size of batch: 50 images, total size ??? (smallest 22M, biggest 911M)
@@ -91,7 +91,7 @@ Status: COMPLETED
 Worker: hovernet4
 Global image indices: 201-250
 
-Command: time hovernethelp/infer_batch.sh '201:250' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '201:250') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-12 at ???
 Size of batch: 49 images, total size 18G (smallest 30M, biggest 1.3G)
@@ -101,7 +101,7 @@ Status: COMPLETED
 Worker: kakapo1
 Global image indices: 251-300
 
-Command: time hovernethelp/infer_batch.sh '251:300' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '251:300') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-12 at 6:50 am PST
 Size of batch: 50 images, total size 26G (smallest 16M, biggest 1.5G)
@@ -111,7 +111,7 @@ Status: COMPLETED
 Worker: hovernet6
 Global image indices: 301-320
 
-Command: time hovernethelp/infer_batch.sh '301:320' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh '301:320') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-13 at 0:06 am PST
 Size of batch: 20 images, total size 8.3G (smallest 49M, biggest 1.4G)
@@ -131,7 +131,7 @@ Global image indices: 655,656,894,895,896,897,898,899,900,901,
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-OV")[1:15]
 
-Command: time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[1:15]' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[1:15]') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-13 at 3:59 pm PST
 Size of batch: 14 images, total size 21G (smallest 520M, biggest 2.2G)
@@ -147,7 +147,7 @@ Global image indices: 907,908,909,910,911,912,913,914,915,916,
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-OV")[16:30]
 
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 
 Started on: 2024-12-13 at 5:24 pm PST
 Size of batch: 15 images, total size 27G (smallest 943M, biggest 2.5G)
@@ -163,7 +163,7 @@ Global image indices: 922,923,924,925,926,927,928,929,930,931,
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-OV")[31:45]
 
-Command: time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[31:45]' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[31:45]') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-13 at 3:25 pm PST
 Size of batch: 15 images, total size 30G?? (smallest 836M, biggest 3.8G)
@@ -179,7 +179,7 @@ Global image indices: 937,938,939,940,941,942,943,944,945,946,
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-OV")[46:60]
 
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 
 Started on: 2024-12-15 at 12:33 pm PST
 Size of batch: 15 images, total size 42G (smallest 1.6G, biggest 3.8G)
@@ -195,7 +195,7 @@ Global image indices: 952,953,954,955,956,957,958,959,960,961,
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-OV")[61:75]
 
-Command: time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[61:75]' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[61:75]') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-13 at 3:44 pm PST
 Size of batch: 15 images, total size 41G (smallest 2.0G, biggest 4.0G)
@@ -212,7 +212,7 @@ Global image indices: 967,968,969,970,971,972,973,974,975,976,
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-OV")[76:107]
 
-Command: time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[76:107]' >>infer_batch.log 2>&1 &
+Command: (time hovernethelp/infer_batch.sh 'which(db[,"Project.ID"] == "TCGA-OV")[76:107]') >>infer_batch.log 2>&1 &
 
 Started on: 2024-12-15 at 0:34 am PST
 Size of batch: 32 images, total size 37G (smallest 86M, biggest 3.5G)
@@ -223,7 +223,7 @@ Worker: kakapo1
 Goal: Process images that failed on the JS2 g3.large instances
 Global image indices: 655,912,914,926,935,938
 
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 
 Started on: 2024-12-16 at 4:40 am PST
 Status: COMPLETED
@@ -238,21 +238,21 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet1
 Global image indices: 321-350
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-15 at 8:28 pm PST
 Status: COMPLETED
 
 -------------------------------------------------------------------------------
 Worker: hovernet3
 Global image indices: 351-400
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-15 at 9:26 pm PST
 Status: COMPLETED
 
 -------------------------------------------------------------------------------
 Worker: hovernet2
 Global image indices: 401-500
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-16 at 4:07 am PST
 Status: COMPLETED
 #successes/#failures: 100/0
@@ -260,7 +260,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet7
 Global image indices: 501-600
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-16 at 4:10 am PST
 Status: COMPLETED
 #successes/#failures: 93/7
@@ -268,7 +268,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet1
 Global image indices: 601-700 (except 655,656 from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-16 at 9:28 am PST
 Status: COMPLETED
 #successes/#failures: 66/32
@@ -276,7 +276,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet3
 Global image indices: 701-800
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-16 at 9:45 am PST
 Status: COMPLETED
 #successes/#failures: 96/4
@@ -284,7 +284,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet6
 Global image indices: 801-900 (except 894-900 from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-16 at 9:54 am PST
 Status: COMPLETED
 #successes/#failures: 89/4
@@ -292,7 +292,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet4
 Global image indices: 901-1100 (except 901-976 from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-16 at 10:36 pm PST
 Status: COMPLETED
 #successes/#failures: 123/1
@@ -300,7 +300,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet2
 Global image indices: 1101-1300
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-18 at 7:55 pm PST
 Status: COMPLETED
 #successes/#failures: 196/4
@@ -308,7 +308,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet3
 Global image indices: 1301-1500 (except 1476 from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-18 at 8:35 pm PST
 Status: COMPLETED
 #successes/#failures: 187/12
@@ -317,7 +317,7 @@ Status: COMPLETED
 Worker: hovernet4
 Global image indices: 1501-1700 (except 1504,1505,1506,1507,1508,1509,1510
                                  from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-18 at 8:42 pm PST
 Status: COMPLETED
 #successes/#failures: 174/19
@@ -325,7 +325,7 @@ Status: COMPLETED
 -------------------------------------------------------------------------------
 Worker: hovernet7
 Global image indices: 1701-1900
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-18 at 8:49 pm PST
 Status: COMPLETED (on 2024-12-31 at 11:13 pm PST)
 #successes/#failures: 176/24
@@ -334,7 +334,7 @@ Status: COMPLETED (on 2024-12-31 at 11:13 pm PST)
 Worker: hovernet1
 Global image indices: 1901-2200 (except 1952,1953,1954,1955,1956,1957,1958,
                                  1964,2005 from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-20 at 11:02 am PST
 Status: COMPLETED (on 2025-01-02 at 7:58 am PST)
 #successes/#failures: 277/14
@@ -342,7 +342,7 @@ Status: COMPLETED (on 2025-01-02 at 7:58 am PST)
 -------------------------------------------------------------------------------
 Worker: hovernet6
 Global image indices: 2201-2450 (except 2005 from TCGA-OV project)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-20 at 8:02 pm PST
 Status: COMPLETED (on 2025-01-05 at 10:42 am PST)
 #successes/#failures: 238/11
@@ -350,7 +350,7 @@ Status: COMPLETED (on 2025-01-05 at 10:42 am PST)
 -------------------------------------------------------------------------------
 Worker: kakapo1
 Global image indices: 2451-2700
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-21 at 0:01 am PST
 Status: COMPLETED (on 2024-12-31)
 #successes/#failures: 250/0
@@ -358,7 +358,7 @@ Status: COMPLETED (on 2024-12-31)
 -------------------------------------------------------------------------------
 Worker: kakapo1
 Global image indices: 2701-3000
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2024-12-31 at 18:08 pm PST
 Status: COMPLETED (on 2025-01-10 at 6:47 am PST)
 #successes/#failures: 282/18
@@ -367,7 +367,7 @@ Status: COMPLETED (on 2025-01-10 at 6:47 am PST)
 Worker: kakapo1
 Global image indices: all the images that failed so far on the hovernet VMs
                       (128 images in total)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-10 at 11:59 am PST
 Status: COMPLETED (on 2025-01-20 at 10:44 am PST)
 #successes/#failures: 124/4
@@ -375,7 +375,7 @@ Status: COMPLETED (on 2025-01-20 at 10:44 am PST)
 -------------------------------------------------------------------------------
 Worker: hovernet3
 Global image indices: 11761-11765 (last 5 images)
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-10 at 7:25 am PST
 Status: COMPLETED (on 2025-01-10 at 12:12 pm PST)
 #successes/#failures: 5/0
@@ -383,7 +383,7 @@ Status: COMPLETED (on 2025-01-10 at 12:12 pm PST)
 -------------------------------------------------------------------------------
 Worker: kakapo1
 Global image indices: 3001-3500
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-21 at 10:25 pm PST
 Status: RUNNING
 #successes/#failures: ?/?
@@ -391,7 +391,7 @@ Status: RUNNING
 -------------------------------------------------------------------------------
 Worker: hovernet1
 Global image indices: 3501-3750
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-24 at 10:25 am PST
 Status: RUNNING
 #successes/#failures: ?/?
@@ -399,31 +399,31 @@ Status: RUNNING
 -------------------------------------------------------------------------------
 Worker: hovernet2
 Global image indices: 3751-4000
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-24 at 10:44 am PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-14 at 3:51 am PST)
+#successes/#failures: 233/17
 
 -------------------------------------------------------------------------------
 Worker: hovernet4
 Global image indices: 4001-4250
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-25 at 11:41 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-16 at 6:24 am PST)
+#successes/#failures: 242/8
 
 -------------------------------------------------------------------------------
 Worker: hovernet5
 Global image indices: 4251-4500
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-25 at 11:58 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-16 at 10:32 pm PST)
+#successes/#failures: 236/14
 
 -------------------------------------------------------------------------------
 Worker: hovernet6
 Global image indices: 4501-4750
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-26 at 12:02 am PST
 Status: RUNNING
 #successes/#failures: ?/?
@@ -432,8 +432,40 @@ Status: RUNNING
 Worker: hovernet3
 Global image indices: 4751-5000 (except 4861-4884 from TCGA-PRAD project,
                                  so 'idx <- c(4751:4860, 4885:5000)')
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-02-07 at 7:49 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet2
+Global image indices: 5001-5500
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-14 at 7:50 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet4
+Global image indices: 5501-6000
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-16 at 11:03 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet5
+Global image indices: 6001-6500
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-17 at 11:22 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet7
+Global image indices: 6501-7000
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-19 at 11:58 am PST
 Status: RUNNING
 #successes/#failures: ?/?
 
@@ -450,7 +482,7 @@ Global image indices: 4861-4884, 7129-7191, 7675-7681,
   # List of global indices obtained in R with:
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-PRAD")[12:217]
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-10 at 12:30 pm PST
 Status: COMPLETED (on 2025-02-06 at 4:23 am PST)
 #successes/#failures: 204/2
@@ -465,8 +497,8 @@ Global image indices: 8434-8437, 8976-8998, 9077-9121, 9382-9389, 9405-9406,
   # List of global indices obtained in R with:
   #   load('~/imageTCGA/R/sysdata.rda')
   #   which(db[,"Project.ID"] == "TCGA-PRAD")[218:449]
-Command: time hovernethelp/infer_batch2.sh >>infer_batch2.log 2>&1 &
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-02-03 at 8:41 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-19 at 8:23 am PST)
+#successes/#failures: 224/8
 
