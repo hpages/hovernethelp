@@ -393,8 +393,8 @@ Worker: hovernet1
 Global image indices: 3501-3750
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-24 at 10:25 am PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-20 at 2:33 pm PST)
+#successes/#failures: 232/18
 
 -------------------------------------------------------------------------------
 Worker: hovernet2
@@ -425,8 +425,8 @@ Worker: hovernet6
 Global image indices: 4501-4750
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-01-26 at 12:02 am PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-19 at 5:33 pm PST)
+#successes/#failures: 232/18
 
 -------------------------------------------------------------------------------
 Worker: hovernet3
@@ -434,8 +434,8 @@ Global image indices: 4751-5000 (except 4861-4884 from TCGA-PRAD project,
                                  so 'idx <- c(4751:4860, 4885:5000)')
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-02-07 at 7:49 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-02-19 at 4:30 pm PST)
+#successes/#failures: 158/68
 
 -------------------------------------------------------------------------------
 Worker: hovernet2
@@ -466,6 +466,34 @@ Worker: hovernet7
 Global image indices: 6501-7000
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-02-19 at 11:58 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet1
+Global image indices: 7001-7500 (except 7129-7191 from TCGA-PRAD project,
+                                 so 'idx <- c(7001:7128, 7192:7500)')
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-20 at 3:46 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet3
+Global image indices: 7501-8000 (except 7675-7681 from TCGA-PRAD project,
+                                 so 'idx <- c(7501:7674, 7682:8000)')
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-20 at 3:55 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernet6
+Global image indices: 8001-8600 (except 8151-8194, 8328-8330, 8337-8401,
+  8434-8437 from TCGA-PRAD project, so 'idx <- c(8001:8150, 8195:8327,
+  8331:8336, 8402:8433, 8438:8600)')
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-02-20 at 3:55 pm PST
 Status: RUNNING
 #successes/#failures: ?/?
 
