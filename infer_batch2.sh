@@ -58,6 +58,7 @@ while true; do
 		--output_dir=$HOME/infer_output/ \
 		--save_thumb \
 		--save_mask
+	rm -rf ~/cache
 
 	## Update 'manifest-success' or 'manifest-failure'
 	if [ $? -eq 0 ]; then

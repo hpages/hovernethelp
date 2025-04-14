@@ -515,8 +515,8 @@ Started on: 2025-02-26 at 9:41 pm PST
 Status: COMPLETED (on 2025-03-14 at 3:04 am PST)
 #successes/#failures: 142/448 (that's seriously messed up!)
 Restarted on the 448 images that failed on: 2025-03-14 at 3:30 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-04-14 at 2:37 am PST)
+#successes/#failures: 394/54 (much better! why so many failures the 1st time?)
 
 -------------------------------------------------------------------------------
 Worker: hovernet2
@@ -524,8 +524,8 @@ Global image indices: 9801-10300 (except 10160-10164 from TCGA-PRAD project,
   so 'idx <- c(9801:10159, 10165:10300)')
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-03-14 at 2:59 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-04-10 at 12:19 pm PST)
+#successes/#failures: 475/20
 
 -------------------------------------------------------------------------------
 Worker: hovernet4
@@ -534,8 +534,8 @@ Global image indices: 10301-10800 (except 10500, 10536, 10567-10568,
   10537:10566, 10569:10738, 10770:10800)')
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-03-14 at 3:18 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-03-30 at 10:22 am PST)
+#successes/#failures: 125/340 (that's also seriously messed up!)
 
 -------------------------------------------------------------------------------
 Worker: hovernet7
@@ -544,8 +544,8 @@ Global image indices: 10801-11300 (except 10919-10931, 11245-11252, 11269-11281
   11282:11300)')
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-03-19 at 1:11 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-04-12 at 7:33 am PST)
+#successes/#failures: 463/3
 
 -------------------------------------------------------------------------------
 Worker: kakapo1
@@ -554,6 +554,22 @@ Global image indices: 11301-11765 (except 11368, 11452-11468, 11488-11490,
   11369:11451, 11469:11487, 11491:11533, 11545:11569, 11614:11765)')
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-03-23 at 8:29 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernetxl
+Global image indices: 497 images that failed on previous hovernet4 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-04-01 at 11:27 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernetxl2
+Global image indices: 145 images that failed on previous hovernet5 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-04-14 at 10:21 am PST
 Status: RUNNING
 #successes/#failures: ?/?
 
