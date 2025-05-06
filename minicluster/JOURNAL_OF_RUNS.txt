@@ -554,22 +554,62 @@ Global image indices: 11301-11765 (except 11368, 11452-11468, 11488-11490,
   11369:11451, 11469:11487, 11491:11533, 11545:11569, 11614:11765)')
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-03-23 at 8:29 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-04-26 at 10:19 am PST)
+#successes/#failures: 387/2
 
 -------------------------------------------------------------------------------
 Worker: hovernetxl
 Global image indices: 497 images that failed on previous hovernet4 runs
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-04-01 at 11:27 am PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-05-01 at 4:26 pm PST)
+#successes/#failures: 497/0
 
 -------------------------------------------------------------------------------
 Worker: hovernetxl2
 Global image indices: 145 images that failed on previous hovernet5 runs
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-04-14 at 10:21 am PST
+Status: COMPLETED (on 2025-04-25 at 7:16 pm PST)
+#successes/#failures: 144/1
+
+-------------------------------------------------------------------------------
+Worker: hovernetxl2
+Global image indices: 112 images that failed on previous hovernet3 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-04-26 at 3:05 pm PST
+Status: COMPLETED (on 2025-05-05 at 7:25 am PST)
+#successes/#failures: 112/0
+
+-------------------------------------------------------------------------------
+Worker: kakapo1
+Global image indices: 50 images that failed on previous hovernet2 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-04-27 at 2:40 pm PST
+Status: COMPLETED (on 2025-05-06 at 3:39 am PST)
+#successes/#failures: 50/0
+
+-------------------------------------------------------------------------------
+Worker: hovernetxl
+Global image indices: 41 images that failed on previous hovernet1 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-05-01 at 9:56 pm PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: hovernetxl2
+Global image indices: 34 images that failed on previous hovernet7 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-05-05 at 9:47 am PST
+Status: RUNNING
+#successes/#failures: ?/?
+
+-------------------------------------------------------------------------------
+Worker: kakapo1
+Global image indices: 27 images that failed on previous hovernet6 runs
+Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
+Started on: 2025-05-06 at 4:23 pm PST
 Status: RUNNING
 #successes/#failures: ?/?
 
