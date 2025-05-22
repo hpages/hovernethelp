@@ -14,7 +14,7 @@
 set +e  # do NOT exit if a simple command exits with a non-zero status
 
 TCGA_DATA_URL="https://api.gdc.cancer.gov/data/"
-RSYNC_DEST_DIR="hovernet@hoverboss:/media/volume/inferdata4/$HOSTNAME"
+RSYNC_DEST_DIR="hovernet@hoverboss:/media/volume/inferdata3/$HOSTNAME"
 
 while true; do
 	rm -rf ~/cache
