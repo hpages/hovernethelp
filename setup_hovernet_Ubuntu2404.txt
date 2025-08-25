@@ -38,14 +38,14 @@ Only for convenience
 
     sudo apt-get install tree
 
-Install NVIDIA drivers and CUDA Runtime Library
+Check drivers compatibility with GPU
 
     ## Check drivers compatibility with GPU:
     nvidia-smi  # if incompatible then will print something like:
                 #   Failed to initialize NVML: Driver/library version mismatch
                 #   NVML library version: 550.120
 
-    ## Only if **incompatible** drivers:
+ONLY if **incompatible** drivers
 
     ## --- on JS2 instance (NVIDIA A100 GPU), try:
     sudo apt-get install nvidia-linux-grid-535  # CUDA 12.2
@@ -145,18 +145,18 @@ Install R 4.4 (Ubuntu 24.04 only provides R 4.3)
 
     mkdir ~/rdownloads
     cd ~/rdownloads
-    wget https://cran.rstudio.com/src/base/R-4/R-4.4.2.tar.gz
-    tar zxvf R-4.4.2.tar.gz
+    wget https://cran.rstudio.com/src/base/R-4/R-4.5.1.tar.gz
+    tar zxvf R-4.5.1.tar.gz
 
-    mkdir ~/R-4.4.2
-    cd ~/R-4.4.2
-    ~/rdownloads/R-4.4.2/configure
+    mkdir ~/R-4.5.1
+    cd ~/R-4.5.1
+    ~/rdownloads/R-4.5.1/configure
     make -j 12
 
     mkdir ~/bin
     cd ~/bin
-    ln -s ../R-4.4.2/bin/R
-    ln -s ../R-4.4.2/bin/Rscript
+    ln -s ../R-4.5.1/bin/R
+    ln -s ../R-4.5.1/bin/Rscript
 
     ## IMPORTANT: Logout/login to get ~/bin persistently added to the PATH.
     ## Or just:

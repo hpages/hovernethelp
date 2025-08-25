@@ -58,9 +58,12 @@ while true; do
 		--output_dir=$HOME/infer_output/ \
 		--save_thumb \
 		--save_mask
-	rm -rf ~/cache
 
 	## Update 'manifest-success' or 'manifest-failure'
+	## Note that run_infer.py can return 0 even when it fails (e.g. when
+	## it crashes) so we cannot rely on the returned code to detect
+	## failure. Instead we look at whether a json file was produced or not.
+        ls "$HOME/infer_output/json/*.json"
 	if [ $? -eq 0 ]; then
 		## Success
 		echo ""
@@ -92,5 +95,6 @@ while true; do
 		cat manifest-current >>manifest-failure
 	fi
 	rm manifest-current
+	rm -rf ~/cache
 done
 
