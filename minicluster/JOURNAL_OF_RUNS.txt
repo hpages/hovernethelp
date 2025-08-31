@@ -627,16 +627,23 @@ Worker: hovernetxl2 (with 500GB root disk instead of 200GB)
 Input images: the 954 difficult images that resisted any earlier attempt
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-05-21 at 11:18 pm PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (in June 2025)
+#successes/#failures: 777/177
 
 -------------------------------------------------------------------------------
 Worker: hovernetxl3 (with 400GB root disk instead of 200GB)
 Input images: the 177 difficult images that resisted any earlier attempt
 Command: (time hovernethelp/infer_batch2.sh) >>infer_batch2.log 2>&1 &
 Started on: 2025-08-25 at 9:18 am PST
-Status: RUNNING
-#successes/#failures: ?/?
+Status: COMPLETED (on 2025-08-27 at 10:17 am PST)
+#successes/#failures: 0/177
+
+Details of failures:
+- 99 crashes
+- 78 killed (because of leaked semaphore objects)
+
+See IMPOSSIBLE_INAGES.txt in parent directory for the list of 177 images
+that resisted all attempts!
 
 
 ===============================================================================
